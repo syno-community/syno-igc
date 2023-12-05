@@ -1,0 +1,27 @@
+{
+  "mod_version": "1.3.1",
+
+  "files": [
+    {
+      "name": "igc-epyc7002.tgz",
+      "url": "https://raw.githubusercontent.com/jim3ma/synology-igc/master/igc/releases/igc-epyc7002.tgz",
+      "sha256": "12bd8493bd7285fa4d9790ebacd1efe43caafd5134ec5d350edab12a829cdbff",
+      "packed": true
+    },
+    {
+      "name": "check-igc.sh",
+      "url": "https://raw.githubusercontent.com/jim3ma/synology-igc/master/igc/src/check-igc.sh",
+      "sha256": "4892e37cc4f974700b88332e005d61676257876938f8e57677c655a2eca5a8ef",
+      "packed": false
+    }
+  ],
+
+  "kmods": {
+    "igc.ko": ""
+  },
+
+    "scripts": {
+    "on_boot": "check-igc.sh"
+  }
+
+}
